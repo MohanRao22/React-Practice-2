@@ -1,18 +1,13 @@
-const heading = document.createElement("h1");
-const root = document.getElementById("root2");
+import React from "react";
+import ReactDOM  from "react-dom/client";
+
+const  Heading = ()=>(
+      <div id="heading">
+         <h1>First jsx heading</h1>
+      </div>
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Heading></Heading>);
 
 
-heading.innerHTML = "I am from JS";
-root.append(heading);
-
-
-const head = React.createElement("div",{className : "sub-head"}, React.createElement("div",{className : "parent"},
- [
-    React.createElement("p",{},"I am first child"),
-    React.createElement("p",{},"I am second child"),
-    React.createElement("p",{},"I am third child")
- ]
-));
-console.log(head);
-const roote = ReactDOM.createRoot(document.getElementById("root3"));
-roote.render(head);
