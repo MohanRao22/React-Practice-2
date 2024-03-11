@@ -1,0 +1,91 @@
+*, body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    background-color: #c7c7c7;
+}
+.right-menu-container{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+.nav-menus ul li{
+
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+.profile img{
+    border-radius: 20%;
+}
+
+.search-block{
+    max-width: 900px;
+    margin: 20px auto;
+}
+#search-item{
+    width: 70%;
+    margin-right: 30px;
+    padding: 16px 30px;
+}
+#submit{
+    padding: 8px 30px;
+    background: #ffba00;
+    border: none;
+    font-size: 16px;
+    padding: 12px 25px;
+}
+
+.restaurant-container{
+    margin: 60px 150px;
+}
+.restos-item{
+    max-width: 250px;
+}
+.restos-item h6{
+  font-weight: 700;
+  font-size: 20px;
+  font-family: Basis_Grotesque_Pro_Bold;
+  margin: 10px 0;
+} 
+.restos-item img{
+    width: 220px;
+    object-fit: cover;
+    border-radius: 20%;
+    cursor: pointer;
+}
+.restos-item:hover{
+    cursor: pointer;
+    transform: scale(0.96);
+}
+.resto-details-wrap{
+    margin-top: 20px;
+}
+.restos-item p{
+    margin: 10px 0;
+}
+
+
+.restaurant-container{
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+.filter, .delivery-fil{
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+#submit{
+    cursor: pointer;
+}
